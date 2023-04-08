@@ -1,4 +1,4 @@
-weight = input("enter your weight in kg:\n")
+weight = float(input("enter your weight in kg:\n"))
 height = input("enter your height in m:\n")
 
 
@@ -7,12 +7,15 @@ BMI_as_int = int(BMI)
 
 if BMI_as_int < 18.5:
   print(f"your BMI is {BMI_as_int}, you are underweight")
-elif BMI_as_int > 18.5 and BMI_as_int < 25:
+elif BMI_as_int < 25:
   print(f"your BMI is {BMI_as_int}, you have a normal weight")
-elif BMI_as_int > 25 and BMI_as_int < 30:
+elif BMI_as_int < 30:
   print(f"your BMI is {BMI_as_int}, you are slightly overweight")
-elif BMI_as_int > 30 and BMI_as_int < 35:
+elif BMI_as_int < 35:
   print(f"your BMI is {BMI_as_int}, you are obese")
-elif BMI_as_int > 35:
+else:
   print(f"your BMI is {BMI_as_int}, you are clinically obese")
+
+
+ 
 
